@@ -9,7 +9,7 @@
 #||engadget.com^
 
 # TCP BBR 拥塞控制算法
-wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh&&chmod +x bbr.sh&&./bbr.sh 2>$1 | tee bbr.log
+wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh&&chmod +x bbr.sh&&./bbr.sh 2>&1 | tee bbr.log
 
 # Kcptun 配置 udp加速
 #wget --no-check-certificate https://github.com/kuoruan/shell-scripts/raw/master/kcptun/kcptun.sh
